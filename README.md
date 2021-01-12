@@ -1,7 +1,10 @@
-#BlogTest
+# BlogTest
 
-##목차
+## 목차
+ 
 1.[환경](#환경)
+2.[MySQL](#MySQL)
+3.[XML](#xml-file)
 
 ## 환경
 
@@ -16,7 +19,9 @@
 - 인코딩 utf-8
 
 
-##MySQL 데이터 베이스 생성 및 사용자 생성
+## MySQL
+
+### MySQL 데이터 베이스 생성 및 사용자 생성
 
 ```sql
 CREATE USER 'testuser' @'%' IDENTIFIED BY 'bitc5600';
@@ -24,7 +29,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'testuser' @'%';
 CREATE DATABASE test;
 ```
 
-## MySQL 테이블 생성
+### MySQL 테이블 생성
 
 ```sql
 CREATE TABLE user(
@@ -40,7 +45,7 @@ CREATE TABLE user(
 
 ## xml File
 
-## web.xml
+### web.xml
 
 ```xml
 <description>MySQL Test App</description>
@@ -62,7 +67,7 @@ CREATE TABLE user(
 	</filter-mapping>
 ```
 
-## context.xml
+### context.xml
 
 ```xml
 <Resource name="jdbc/TestDB" auth="Container"
@@ -76,7 +81,7 @@ CREATE TABLE user(
 
 ## jsp File
 
-## index.jsp
+### index.jsp
 
 ```jsp
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -88,7 +93,7 @@ CREATE TABLE user(
 %>
 ```
 
-## header.jsp
+### header.jsp
 
 ```jsp
 	<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -118,7 +123,7 @@ CREATE TABLE user(
 	</nav>
 ```
 
-## list.jsp
+### list.jsp
 
 ```jsp
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -130,7 +135,7 @@ CREATE TABLE user(
 </html>
 ```
 
-## join.jsp
+### join.jsp
 
 ```jsp
 <div class="container" style="padding-top: 50px">
@@ -156,7 +161,7 @@ CREATE TABLE user(
 </div>
 ```
 
-## success.jsp
+### success.jsp
 
 ```jsp
 <div class="container" style="margin: 50px">
@@ -172,7 +177,7 @@ CREATE TABLE user(
 </div>
 ```
 
-## login.jsp
+### login.jsp
 
 ```jsp
 <div class="container" style="padding-top: 50px">
@@ -194,7 +199,7 @@ CREATE TABLE user(
 </div>
 ```
 
-## userList.jsp
+### userList.jsp
 
 ```jsp
 <div class="container" style="padding-top: 50px">
